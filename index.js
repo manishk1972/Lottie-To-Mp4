@@ -11,7 +11,7 @@ dotenv.config();
 
 const upload = multer();
 const app = express();
-const port = process.env.port;
+const port = process.env.port || 5002;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
